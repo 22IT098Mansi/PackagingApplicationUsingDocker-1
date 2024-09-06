@@ -1,0 +1,7 @@
+services: 
+  redis-server: 
+    image: "redis"
+  node-app:
+    build: ./node
+    ports:
+    - '5000:8080'
